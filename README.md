@@ -18,17 +18,21 @@ ${\color{#f5cba7}side note}$
 ### Introduction
 - ${\color{#717d7e}Planning\ in\ SDF}$
 - ${\color{#717d7e}Deep\ learning\ geometric\ representation\ called\ NeRFs}$
-- $\textcolor{#f0b27a}{Optimal\ control\ remains\ a\ fundamental\ tool\ in\ robotic\ motion\ planning}$
 
-*Contribution be:*
+
+**Contribution be:**
+
+
 We address this need in this paper by proposing:
-• a new trajectory planning method, based on differential
+- a new trajectory planning method, based on differential
 flatness, that plans full, dynamically feasible trajectories
 to avoid collisions with a NeRF environment,
-• an optimization-based filter to obtain a posterior estimate
+
+- an optimization-based filter to obtain a posterior estimate
 of the full dynamic state, balancing a dynamics prediction
 loss and a NeRF-based photometric loss, and
-• an online replanning controller that combines both of the
+
+- an online replanning controller that combines both of the
 above algorithms in feedback to robustly navigate a robot
 through its environment using a NeRF model.
 
@@ -37,9 +41,17 @@ through its environment using a NeRF model.
 Combines trajectory planner and the filter in a receding horizon loop to provide a full navigation pipeline for a robot to dynamically maneuver through an environment using only an RGB camera for feedback.
 
 
+### Related work
 
+#### NeRF
 
+- The method we present here for state estimation also uses maximum likelihood estimation (MLE), but we instead treat the problem as recursive Bayesian estimation, which incorporates system dynamics and must propagate uncertainty between timesteps.
 
+#### Trajectory optimization
+
+- $\textcolor{#f0b27a}{Optimal\ control\ remains\ a\ fundamental\ tool\ in\ robotic\ motion\ planning}$
+
+One approach to model an environment is as an SDF, which represents obstacles as the zero-level set of a nonlinear function d(x)
 
 
 
