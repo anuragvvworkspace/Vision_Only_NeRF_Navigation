@@ -12,7 +12,7 @@ trajectory optimization algorithm that avoids collisions with high-density regio
 ```
 
 ### Introduction
-- ![#f03c15]Planning in SDF
+- $${\color{red}Planning in SDF}$$
 - deep learning geometric representation called NeRFs
 
 trajectory planner and the filter in a receding horizon loop to provide a full navigation pipeline for a robot to dynamically maneuver through an environment using only an RGB camera for feedback.
