@@ -9,7 +9,7 @@ ${\color{#f5cba7}side note}$
 - We propose an algorithm for navigating a robot through a 3D environment represented as a NeRF using only an onboard RGB camera for localization. 
 
 
-- trajectory optimization algorithm that avoids collisions with high-density regions in the NeRF based on a discrete time version of differential flatness that is amenable to constraining the robot's full pose and control inputs.
+- trajectory optimization algorithm that avoids collisions with high-density regions in the NeRF based on a discrete time version of differential flatness that is amenable to constraining the robot's full pose and control inputs. 
 
 
 - We also introduce an optimization based filtering method to estimate 6DoF pose and velocities for the robot in the NeRF given only an onboard RGB camera.
